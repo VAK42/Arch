@@ -2,17 +2,18 @@
 
 * {
     font-family: JetBrainsMono Nerd, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    margin: 0;
+    font-size: 12px;
     padding: 0;
 }
 
 window#waybar {
-    background: transparent;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid @teal;
+    border-radius: 4px;
 }
 
 button {
-    color: @rosewater;
+    color: @maroon;
     border: none;
     border-radius: 0;
 }
@@ -22,65 +23,34 @@ button:hover {
     box-shadow: none;
 }
 
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
-}
-
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
-}
-
-.modules-left, .modules-right {
-   background: rgba(0, 0, 0, 0.9);
-   border-bottom: 2px solid @teal;
-}
-
-.modules-center {
-    background: rgba(0, 0, 0, 0.9);
-    border-bottom: 2px solid @teal;
-    margin: 0 4px;
-}
-
-#workspaces,
-#custom-msi,
-#clock,
-#temperature,
-#cpu,
-#memory,
-#disk,
-#network,
-#battery {
-    padding: 0 4px;
-}
-
 #custom-msi {
-    color: @flamingo;
+    color: @text;
 }
 
 #clock {
-    color: @mauve;
-}
-
-#temperature {
-    color: @maroon;
-}
-
-#cpu {
-    color: @peach;
-}
-
-#memory {
     color: @teal;
 }
 
-#disk {
+#temperature {
+    color: @blue;
+}
+
+#cpu {
     color: @sky;
 }
 
-#network {
+#memory {
+    color: @lavender;
+}
+
+#disk {
     color: @sapphire;
 }
 
+#network {
+    color: @mauve;
+}
+
 #battery { 
-    color: @lavender;
+    color: @green;
 }

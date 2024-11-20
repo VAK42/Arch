@@ -1,9 +1,9 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 30,
+    "height": 28,
     "width": 1920,
-    "spacing": 4,
+    "spacing": 2,
     "modules-left": [
 	"custom/msi",
 	"temperature",
